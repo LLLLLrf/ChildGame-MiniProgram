@@ -1,0 +1,16 @@
+{
+  "pages": ["pages/index/index"],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "Video Recorder & Uploader",
+    "navigationBarTextStyle": "black"
+  },
+  "sitemapLocation": "sitemap.json",
+  "permission": {
+    "scope.camera": {
+      "desc": "Your camera will be used to record video"
+    }
+  }
+}
+

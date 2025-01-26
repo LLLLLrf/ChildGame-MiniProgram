@@ -1,0 +1,14 @@
+<view class="container">
+  <button class="f-button" bindtap="startRecording">Record Video</button>
+  <button class="f-button" bindtap="chooseVideo">Upload Local Video</button>
+
+  <video class="f-vid" wx:if="{{videoSrc}}" src="{{videoSrc}}"></video>
+
+  <button class="f-button" bindtap="uploadVideo" wx:if="{{videoSrc}}">Upload Video</button>
+
+  <view wx:if="{{analysisResult}}" class="analysis-result">
+    <text class="analysis-title">Analysis Result:</text>
+    <text class="analysis-content">{{analysisResult}}</text>
+  </view>
+  
+</view>
