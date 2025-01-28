@@ -1,0 +1,47 @@
+.container {
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.f-button {
+  margin: 10px 0;
+  padding: 10px 20px;
+  width: 80%;
+  background-color: #007AFF;
+  color: white;
+  border: none;
+  border-radius: 10px;
+}
+
+.f-vid {
+  width: 100%;
+  max-width: 300px;
+  margin-top: 10px;
+}
+
+.analysis-result {
+  margin-top: 20px;
+  padding: 15px;
+  background-color: #f0f0f0;
+  border-radius: 5px;
+  width: 80%;
+  max-width: 300px;
+  box-sizing: border-box;
+}
+
+.analysis-title {
+  display: block;
+  margin-bottom: 10px;
+  font-weight: bold;
+  font-size: 16px;
+}
+
+.analysis-content {
+  display: block;
+  word-wrap: break-word;
+  white-space: pre-wrap;
+  font-size: 14px;
+  line-height: 1.4;
+}

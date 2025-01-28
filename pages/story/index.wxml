@@ -1,0 +1,22 @@
+<!--pages/page2/index.wxml-->
+<view class="body" bindtap="handleTap">
+  <view class="header">
+    <text class="head_title">儿童讲故事：</text>
+  </view>
+  <block wx:if="{{!fullscreenMode}}">
+    <view class="container">
+      <image src="/assets/storytelling/character.png" class="img"></image>
+      <view class="dialog-container">
+        <view class="dialog-box">
+          <text class="text_content">小朋友你好，这是@@@，接下来，你需要给@@@讲几个故事。</text>
+        </view>
+      </view>
+    </view>
+  </block>
+  <block wx:else>
+    <view class="fullscreen-container {{deviceType}}">
+      <image class="fullscreen-image" src="{{currentImage}}" mode="aspectFit" style="{{imageStyle}}"></image>
+      <text class="page_num">{{currentImageIndex+1}}/4</text>
+    </view>
+  </block>
+</view>

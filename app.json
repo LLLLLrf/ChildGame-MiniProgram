@@ -1,10 +1,17 @@
 {
-  "pages": ["pages/index/index"],
+  "pages": [
+    "pages/index/index",
+    "pages/plan_a_vac/index",
+    "pages/story/index",
+    "pages/describe/index",
+    "pages/video_upload/index"
+  ],
   "window": {
     "backgroundTextStyle": "light",
     "navigationBarBackgroundColor": "#fff",
     "navigationBarTitleText": "Video Recorder & Uploader",
-    "navigationBarTextStyle": "black"
+    "navigationBarTextStyle": "black",
+    "window": { "navigationStyle": "custom" }
   },
   "sitemapLocation": "sitemap.json",
   "permission": {
@@ -12,5 +19,6 @@
       "desc": "Your camera will be used to record video"
     }
   }
+
 }
 

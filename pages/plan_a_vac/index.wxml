@@ -1,0 +1,24 @@
+<!--pages/plan_a_vac/index.wxml-->
+<view class="body">
+  <view class="header">
+    <text class="head_title">亲子互动任务：</text>
+    <text class="sub_title">计划假期</text>
+  </view>
+  <view class="main_task">
+    <text class="task_text">
+    导语：请您与孩子共同计划、讨论下一个假期的安排（可以是周末、寒暑假或其他近期的节假日）。讨论时长3分钟。时间到后，您会听到“叮咚”提示音。
+    </text>
+  </view>
+  <view class="container">
+    <view class="countdown-wrapper">
+      <view class="progress-ring" style="background: conic-gradient(rgb(243, 194, 34) {{progress}}deg, #E0E0E0 {{progress}}deg 360deg);">
+        <view class="countdown">
+          <text class="countdown-text">{{minutes}}:{{seconds}}</text>
+        </view>
+      </view>
+    </view>
+  </view>
+
+
+
+</view>
