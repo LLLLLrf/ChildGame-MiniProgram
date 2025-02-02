@@ -1,2 +1,29 @@
-<!--pages/page3/index.wxml-->
-<text>pages/page3/index.wxml</text>
+<!--pages/page2/index.wxml-->
+<view class="body" bindtap="handleTap">
+  <view class="header">
+    <text class="head_title">儿童描述图片：</text>
+    <!-- <text class="instruction">“你看，这里有一个关于小猪/小猫/小狗/青蛙的故事。@@@从来没有看过这些图片，也没有听过这个故事，请你把这个故事讲给@@@听。你讲完之后，@@@需要回答几个关于这个故事的问题。@@@答对越多，你得到的金币也越多。所以，你要尽量让他多知道故事里发生了什么。”
+    </text> -->
+  </view>
+  <block wx:if="{{!fullscreenMode}}">
+    <view class="container">
+      <image src="/assets/storytelling/character.png" class="img"></image>
+      <view class="dialog-container">
+        <view class="dialog-box">
+          <text class="text_content">小朋友你好，这是@@@，接下来，你需要给@@@讲几个故事。</text>
+        </view>
+      </view>
+    </view>
+    <view>
+      <Text class="hint">
+        {{dialogText}}
+      </Text>
+    </view>
+  </block>
+  <block wx:else>
+    <view class="fullscreen-container {{deviceType}}">
+      <image class="fullscreen-image" src="{{currentImage}}" mode="aspectFit" style="{{imageStyle}}"></image>
+      <text class="page_num">{{currentImageIndex+1}}/2</text>
+    </view>
+  </block>
+</view>

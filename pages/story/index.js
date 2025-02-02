@@ -2,16 +2,21 @@ Page({
   data: {
     fullscreenMode: false,
     characterImage: '/path/to/character.png',
-    dialogText: '点击屏幕任意处继续',
+    dialogText: '-- 点击屏幕任意处继续 --',
     currentImage: '',
     images: [
       '/assets/storytelling/1.png',
       '/assets/storytelling/2.png',
       '/assets/storytelling/3.png',
       '/assets/storytelling/4.png',
-
     ],
-    currentImageIndex: 0
+    questions:[
+      A=["小猪在吃什么？","小猪为什么摔倒了？"],
+      B=["小猫想吃什么？","小猫最后怎么了？"],
+      C=["小狗在干嘛？","谁帮助了小狗？"],
+      D=["青蛙想做什么？","谁帮助了青蛙？"],
+    ],
+    currentImageIndex: -1
   },
   onLoad() {
     this.getDeviceInfo();
@@ -45,6 +50,11 @@ Page({
         fullscreenMode: true,
         currentImage: this.data.images[0]
       });
+    } if(this.data.currentImageIndex==3 && this.data.fullscreenMode){
+      this.setData({fullscreenMode: false})
+      wx.navigateTo({
+        url: "/pages/index/index",
+      })
     } else {
       // 已在全屏模式，切换到下一张图片
       let nextIndex = (this.data.currentImageIndex + 1) % this.data.images.length;

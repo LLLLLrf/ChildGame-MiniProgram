@@ -1,5 +1,5 @@
 <view class="container">
-  <view class="title">Welcome to My Mini Program</view>
+  <view class="title">Child Games</view>
   <view class="button-group">
     <button bindtap="navigateToPage1">Plan A Vacation</button>
     <button bindtap="navigateToPage2">Children's Storytelling</button>
