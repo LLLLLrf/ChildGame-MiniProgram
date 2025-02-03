@@ -20,7 +20,7 @@ Page({
       } else {
         this.stopCountdown()
         wx.showToast({
-          title: "Countdown finished!",
+          title: "时间到!",
           icon: "success",
         })
       }

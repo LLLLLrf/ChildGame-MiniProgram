@@ -1,7 +1,9 @@
 /* pages/page1/index.wxss */
 .body{
   height: 100vh;
-  background-color: rgb(253, 238, 104);
+  /* gradient color */
+  background: linear-gradient(0deg, rgb(198, 249, 88) 0%, rgb(149, 249, 138) 50%, rgb(228, 251, 192) 100%);
+  
 }
 
 .head_title{
@@ -24,7 +26,9 @@
 }
 
 .task_text{
-  font-family: "微软雅黑";
+  font-family: "黑体";
+  font-size: 1.1em;
+  font-weight: bold;
 }
 
 .container {
@@ -62,6 +66,7 @@
 
 .countdown-text {
   font-size: 48px;
+  font-family: sans-serif;
   font-weight: bold;
   color: #333;
 }

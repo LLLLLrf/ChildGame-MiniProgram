@@ -52,8 +52,8 @@ Page({
       });
     } if(this.data.currentImageIndex==3 && this.data.fullscreenMode){
       this.setData({fullscreenMode: false})
-      wx.navigateTo({
-        url: "/pages/index/index",
+      wx.navigateBack({
+        delta: 1
       })
     } else {
       // 已在全屏模式，切换到下一张图片

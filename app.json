@@ -8,8 +8,8 @@
   ],
   "window": {
     "backgroundTextStyle": "light",
-    "navigationBarBackgroundColor": "#fff",
-    "navigationBarTitleText": "Video Recorder & Uploader",
+    "navigationBarBackgroundColor": "#00000000",
+    "navigationBarTitleText": "",
     "navigationBarTextStyle": "black",
     "window": { "navigationStyle": "custom" }
   },
