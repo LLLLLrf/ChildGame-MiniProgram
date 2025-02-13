@@ -1,3 +1,5 @@
+const config = require('../../utils/config.js');
+
 Page({
   data: {
     videoSrc: "",
@@ -76,7 +78,7 @@ Page({
 
     wx.uploadFile({
       // BACKEND API here
-      url: "http://192.168.43.12:3000/upload",
+      url: `${config.serverUrl}/video/upload`,
       filePath: this.data.tempFilePath,
       name: "video",
       success: (uploadRes) => {

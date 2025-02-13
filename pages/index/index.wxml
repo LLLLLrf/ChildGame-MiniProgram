@@ -1,9 +1,0 @@
-<view class="container">
-  <view class="title">Child Games</view>
-  <view class="button-group">
-    <button bindtap="navigateToPage1">Plan A Vacation</button>
-    <button bindtap="navigateToPage2">Children's Storytelling</button>
-    <button bindtap="navigateToPage3">Children Describe Picture Tasks</button>
-    <button bindtap="navigateToVideoUpload">Video Upload</button>
-  </view>
-</view>

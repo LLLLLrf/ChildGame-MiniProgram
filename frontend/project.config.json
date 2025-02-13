@@ -1,6 +1,6 @@
 {
   "libVersion": "latest",
-  "appid": "wx4b2a09ab30cba574",
+  "appid": "wxc8f957e66e851185",
   "compileType": "miniprogram",
   "packOptions": {
     "ignore": [],
@@ -11,7 +11,8 @@
       "ignore": [],
       "disablePlugins": [],
       "outputPath": ""
-    }
+    },
+    "minified": true
   },
   "condition": {},
   "editorSetting": {

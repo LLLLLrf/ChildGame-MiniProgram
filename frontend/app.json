@@ -8,7 +8,7 @@
   ],
   "window": {
     "backgroundTextStyle": "light",
-    "navigationBarBackgroundColor": "#00000000",
+    "navigationBarBackgroundColor": "#ffffff",
     "navigationBarTitleText": "",
     "navigationBarTextStyle": "black",
     "window": { "navigationStyle": "custom" }
@@ -16,7 +16,10 @@
   "sitemapLocation": "sitemap.json",
   "permission": {
     "scope.camera": {
-      "desc": "Your camera will be used to record video"
+      "desc": "用于录制视频"
+    },
+    "scope.record": {
+      "desc": "用于录制回答"
     }
   }
 

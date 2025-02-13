@@ -1,0 +1,9 @@
+<view class="container">
+  <view class="title">儿童孤独症语音分析</view>
+  <view class="button-group">
+    <button bindtap="navigateToPage1">计划假期</button>
+    <button bindtap="navigateToPage2">讲故事</button>
+    <button bindtap="navigateToPage3">图片描述</button>
+    <!-- <button bindtap="navigateToVideoUpload">Video Upload</button> -->
+  </view>
+</view>

@@ -1,8 +1,9 @@
 /* pages/page2/index.wxss */
 .header{
   background-color: rgb(243, 194, 34);
-  padding: 10px 0px;
+  padding: 12px 0px;
   padding-left: 30px;
+  height: 24px;
   width: 100%;
 }
 
@@ -25,6 +26,15 @@
   flex-direction: row;
   justify-content: center;
   align-items: center;
+}
+
+.hintText{
+  width: 70%;
+  font-size: 1.1em;
+  background-color: rgb(233, 216, 216);
+  border-radius: 20px;
+  padding: 12px 6px 12px 14px;
+  margin: 50px;
 }
 
 .container {
@@ -89,8 +99,10 @@
   left: 50%;
   top: 50%;
   transform: translate(-50%, -50%);
-  max-width: 100%;
-  max-height: 100%;
+  max-width: 90%;
+  max-height: 90%;
+  margin-bottom: 6px;
+  margin-right: 6px;
 }
 
 .notch-left .fullscreen-image {
@@ -103,9 +115,54 @@
 
 .page_num{
   position: fixed;
-  bottom: 5px;
+  bottom: 6px;
   right: 10px;
   font-size: 1.1em;
   font-weight: bold;
   color: rgb(243, 194, 34);
+}
+
+.stop_button{
+  width: 60px;
+  height: 36px;
+  position: fixed;
+  top:4px;
+  right: 8px;
+  font-size: 15px;
+  background-color: rgb(228, 67, 67);
+  color: #fff;
+}
+
+.countdown-wrapper {
+  width: 40px;
+  height: 40px;
+  position: fixed;
+  top: 2px;
+  right: 8px;
+}
+
+.progress-ring {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.countdown {
+  width: 34px;
+  height: 34px;
+  background-color: white;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.countdown-text {
+  font-size: 18px;
+  font-family: sans-serif;
+  font-weight: bold;
+  color: #333;
 }

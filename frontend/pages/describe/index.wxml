@@ -1,0 +1,58 @@
+<!--pages/page2/index.wxml-->
+<view class="body">
+  <block wx:if="{{pageIndex<3}}">
+    <view style="width: 100vw;height: 100vh;position: fixed;top:0;left:0;z-index: 100;" bindtap="handleTap">
+  </view>
+  </block>
+  <view class="header">
+    <text class="head_title">儿童描述图片：</text>
+    <block wx:if="{{pageIndex>2 && seconds<60}}">
+      <view class="countdown-wrapper">
+        <view class="progress-ring" style="background: conic-gradient(rgb(179, 143, 26) {{progress}}deg, #E0E0E0 {{progress}}deg 360deg);">
+          <view class="countdown">
+            <text class="countdown-text">{{seconds}}</text>
+          </view>
+        </view>
+      </view>
+    </block>
+    <block wx:if="{{seconds==60 && (pageIndex-3)%2==0}}">
+      <button bind:tap="handleTap" class="stop_button">
+        结束
+      </button>
+    </block>
+  </view>
+  <block wx:if="{{pageIndex==0}}">
+    <view class="hintText">
+      <text>接下来，儿童需要完成1个图片描述任务。我们将首先给儿童播放一段示范，随后儿童需要独立描述一幅图片中发生了什么。在儿童讲故事过程中，请您尽量不提供其他指导或提示，如果儿童停下来，则问“还有呢？”、“再说说”、“还发生了什么”，直到儿童向您示意讲完了，请按“结束”按钮。对于每幅图，请尽可能让儿童说1分钟以上。
+      </text>
+    </view>
+    <view>
+      <Text class="hint">
+        {{dialogText}}
+      </Text>
+    </view>
+  </block>
+  <block wx:if="{{pageIndex==1}}">
+    <view class="container">
+      <image src="{{characterImage}}" class="img"></image>
+      <view class="dialog-container">
+        <view class="dialog-box">
+          <text class="text_content">小朋友你好，这是@@@，接下来，你需要给@@@讲几个故事。</text>
+        </view>
+      </view>
+    </view>
+    <view>
+      <Text class="hint">
+        {{dialogText}}
+      </Text>
+    </view>
+  </block>
+  <block wx:else>
+    <view class="fullscreen-container {{deviceType}}">
+      <image class="fullscreen-image" src="{{currentImage}}" mode="aspectFit" style="{{imageStyle}}"></image>
+      <!-- <block >
+        <text class="page_num">{{currentImageIndex+1}}/2</text>
+      </block> -->
+    </view>
+  </block>
+</view>
