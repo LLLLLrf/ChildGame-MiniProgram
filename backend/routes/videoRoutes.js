@@ -1,6 +1,9 @@
-import express from 'express';
-import multer from 'multer';
-import { analyzeFile } from '../utils/fileUtils.js';
+// import express from 'express';
+// import multer from 'multer';
+// import { analyzeFile } from '../utils/fileUtils.js';
+const express = require('express');
+const multer = require('multer');
+const { analyzeFile } = require('../utils/fileUtils.js');
 
 const router = express.Router();
 

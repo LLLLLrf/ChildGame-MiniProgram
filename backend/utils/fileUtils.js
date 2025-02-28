@@ -1,4 +1,5 @@
-import path from 'path';
+// import path from 'path';
+const path = require('path');
 
 // 统一文件分析逻辑
 export async function analyzeFile(file, type) {

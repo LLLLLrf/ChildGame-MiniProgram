@@ -1,7 +1,7 @@
-import express from 'express';
-import audioRoutes from './routes/audioRoutes.js';
-import videoRoutes from './routes/videoRoutes.js';
-import fs from 'fs'
+const express = require('express');
+const audioRoutes = require('./routes/audioRoutes.js');
+const videoRoutes = require('./routes/videoRoutes.js');
+const fs = require('fs');
 
 const path = './app.log';
 // import getImage from './routes/getImage.js';
