@@ -35,4 +35,5 @@ router.post('/upload', uploadAudio.single('audio'), async (req, res) => {
   }
 });
 
-export default router;
+// export default router;
+module.exports = router;
